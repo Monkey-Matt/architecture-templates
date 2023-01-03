@@ -1,3 +1,5 @@
+Fork of [Android Architecture Starter Templates](https://github.com/android/architecture-templates) that doesn't require bash 4 (can be setup on default mac environment)
+
 Android Architecture Starter Templates (beta)
 ==================
 
@@ -10,8 +12,8 @@ Templates are compatible with the latest **stable** version of Android Studio.
 
 | Template  | Description |
 | ------------- | ------------- |
-| [`base`](https://github.com/android/architecture-templates/tree/base)  | Reactive architecture, Compose, database, single module  |
-| [`multimodule`](https://github.com/android/architecture-templates/tree/multimodule)  | Base template + multimodule  |
+| [`base`](https://github.com/Monkey-Matt/architecture-templates/tree/base)  | Reactive architecture, Compose, database, single module  |
+| [`multimodule`](https://github.com/Monkey-Matt/architecture-templates/tree/multimodule)  | Base template + multimodule  |
 
 ## Screenshots
 
@@ -48,26 +50,25 @@ saved strings and lets the user save new ones.<br>
 1. Clone the repository, optionally choosing a branch. For example, to check out the `base` branch:
 
 ```
-git clone https://github.com/android/architecture-templates.git --branch base
+git clone https://github.com/Monkey-Matt/architecture-templates.git --branch base
 ```
 
-2. Run the customizer script:
+2. Set customizer script to executable:
 
 ```
-bash customizer.sh your.package.name DataItemType [YourAppName]
+cd Documents/GitHub/architecture-templates
+sudo chmod 755 'customizer.sh'
+```
+
+3. Run the customizer script:
+
+```
+./customizer.sh your.package.name YourAppName
 ```
 
 * `your.package.name` is your app ID (should be lowercase)
-* `DataItemType` is used for the name of the screen, exposed state and data base entity
-(should be PascalCase).
-* Optionally, you can specify a name for your application (should be in PascalCase).
+* `YourAppName` is a name for your application (should be in PascalCase).
 
-Note: the customizer script requires bash 4 and above. You might have to install a modern version
-on macOS:
-
-```
-brew install bash
-```
 
 # License
 
