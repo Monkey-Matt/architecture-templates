@@ -1,9 +1,11 @@
+Fork of [Android Architecture Starter Templates](https://github.com/android/architecture-templates) that doesn't require bash 4 (can be setup on default mac environment)
+
 Architecture starter template (single module)
 ==================
 
 This template is compatible with the latest **stable** version of Android Studio.
 
-![Screenshot](https://github.com/android/architecture-templates/raw/main/screenshots.png)
+![Screenshot](https://github.com/Monkey-Matt/architecture-templates/raw/main/screenshots.png)
 
 ## Features
 
@@ -19,22 +21,29 @@ This template is compatible with the latest **stable** version of Android Studio
 
 ## Usage
 
-1. Clone this branch
+1. Clone the repository, optionally choosing a branch. For example, to check out the `base` branch:
 
 ```
-git clone https://github.com/android/architecture-templates.git --branch base
+git clone https://github.com/Monkey-Matt/architecture-templates.git --branch base
 ```
 
-2. Run the customizer script:
+2. Set customizer script to executable:
 
 ```
-./customizer.sh your.package.name DataItemType [MyApplication]
+cd Documents/GitHub/architecture-templates
+sudo chmod 755 'customizer.sh'
 ```
 
-Where `your.package.name` is your app ID (should be lowercase) and `DataItemType` is used for the
-name of the screen, exposed state and data base entity (should be PascalCase). You can add an optional application name.
+3. Run the customizer script:
+
+```
+./customizer.sh your.package.name YourAppName
+```
+
+* `your.package.name` is your app ID (should be lowercase)
+* `YourAppName` is a name for your application (should be in PascalCase).
 
 # License
 
-Now in Android is distributed under the terms of the Apache License (Version 2.0). See the
+This code is distributed under the terms of the Apache License (Version 2.0). See the
 [license](LICENSE) for more information.
